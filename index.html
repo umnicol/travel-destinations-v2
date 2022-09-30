@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel Destinations</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="root">
+    <header>
+        <h1>Travel Destinations</h1>
+    </header>
+    <div class="container">
+    <div class="split">
+    <div class="form-box">
+    <form class="card" id="destinationForm">
+    <h2>Create New Destination</h2>
+         <div class="form-element">
+    <input id="title" placeholder="Title" type="text" required />
+        </div>
+         <div class="form-element">
+         <div class="dates">
+    <p>Date From:</p>
+     <input id="dateFrom" placeholder="Date From" type="date" required>
+    <p>Date To:</p>
+    <input id="dateTo" placeholder="Date To" type="date" required>
+         </div>
+         </div>
+         <div class="form-element">
+     <input id="location" placeholder="Location" type="text" required />
+         </div>
+         <div class="form-element">
+     <input id="country" placeholder="Country" type="text"  required />
+         </div>
+         <div class="form-element">
+    <textarea id="description" name="Description" placeholder="Description" cols="70"
+    rows="5"></textarea>
+         </div>
+         <div class="form-element">
+    <input id="photo" placeholder="Image" type="file">
+         </div>
+     <input id="button" type="submit" value="Create Destination" />
+         </form>
+         </div>
+         </div>
+         <div class="split">
+         <div class="destinationList"></div>
+         </div>
+         </div>
+    <script src="server.js"></script>
+  </body>
+</html>
